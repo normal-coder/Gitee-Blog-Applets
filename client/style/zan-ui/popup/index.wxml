@@ -1,0 +1,8 @@
+<template name="popup">
+<view class="popup-example--top zan-popup zan-popup--top {{ showPopup ? 'zan-popup--show' : ''}}">
+    <view class="zan-popup__mask" catchtap="togglePopup"></view>
+    <view class="zan-popup__container">
+        {{ PopupData }}
+    </view>
+</view>
+</template>
