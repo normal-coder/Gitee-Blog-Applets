@@ -1,0 +1,64 @@
+/* pages/index/index/index.wxss */
+
+.zan-card__thumb {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.zan-tab__item--selected .zan-tab__title {
+    color: #319440;
+    border-bottom: 2px solid #319440;
+}
+
+.swiper-tab{
+    width: 100%;
+    border-bottom: 2rpx solid #ccc;
+    text-align: center;
+    height: 88rpx;
+    line-height: 88rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.swiper-tab-item{
+    width: 30%; 
+    color:#434343;
+}
+.active{
+    color:#F65959;
+    border-bottom: 4rpx solid #F65959;
+}
+swiper{
+  /* text-align: center; */
+}
+
+
+.zan-box{
+    width: 90%;   
+    margin: 1.5em 5% 1.5em 5%; 
+    background-color: #fff;
+    border:0px solid;
+    border-radius:7px;
+    box-shadow: 0 5px 35px rgba(50, 50, 93, 0.1), 0 0px 5px rgba(0, 0, 0, 0.07);
+}
+
+
+.blog-info{
+    width:90%;
+    padding:1em 5% 1em 5%;
+}
+.title{
+    /* width: 100%; */
+    /* padding: 1em 1em 1em 1em; */
+}
+.category{
+    display: inline-block; font-size: 12px;color: #999; margin-right: 5px
+}
+.public_time{ display: inline-block; font-size: 12px;color: #999; margin-right: 5px}
+
+
+
+
+.zan-loadmore--nomore .zan-loadmore__tips {
+    background:#eeeeee;
+}

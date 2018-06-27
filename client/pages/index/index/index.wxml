@@ -1,0 +1,46 @@
+<!--pages/index/index/index.wxml-->
+<import src="/style/zan-ui/tab/index.wxml" />
+<import src="/style/zan-ui/loadmore/index.wxml" />
+
+<view class="container">
+    <view style="margin: 0px 0;">
+        <template is="zan-tab" data="{{ ...categoryTab, componentId: 'tab3' }}"></template>
+    </view>
+    <view style="margin-top:0px">
+        <swiper current="{{categoryTab.selectedTabID}}" id="swiper1" bindchange="swiperTab" style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+            <block wx:for="{{ categoryTab.list }}" wx:for-item="group" wx:key="title">
+                <swiper-item class="slide-swiper">
+                    <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}" bindscrolltolower="getNextPage" bindscrolltoupper="refreshCurrentPage">
+                        <block wx:for="{{ group.data }}" wx:for-item="singleBlog" wx:key="">
+                            <navigator url="/pages/index/detail/index?path={{ singleBlog.href }}&cover={{ singleBlog.thumbnail }}" hover-class="navigator-hover">
+                                <view class="zan-box">
+                                    <view class="zan-row">
+                                        <image style="width:100%" src='{{ singleBlog.thumbnail }}' lazy-load='true' mode='widthFix'></image>
+                                    </view>
+                                    <view class="zan-row">
+                                        <view class='blog-info'>
+                                            <!-- zan-panel-box-head -->
+                                            <view class='title'>
+                                                {{ singleBlog.title }}
+                                            </view>
+                                            <view class='category'>
+                                                {{ singleBlog.category }}
+                                            </view>
+                                            <view class='public_time'>
+                                                {{ singleBlog.date }}
+                                            </view>
+                                        </view>
+                                    </view>
+                                </view>
+                            </navigator>
+                        </block>
+                        <view style="margin-top:2em;margin-bottom:1em;">
+                            <template is="zan-loadmore" data="{{ nomore: true }}" />
+                        </view>
+                    </scroll-view>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+
+</view>
