@@ -1,0 +1,32 @@
+/* pages/setting/index.wxss */
+
+.logo {
+    display: block;
+    margin: 40px auto 20px;
+    width: 92px;
+    height: 92px;
+}
+
+.logo-title {
+    font-size: 20px;
+    line-height: 1;
+    color: #333;
+    padding: 5px 15px 0 15px;
+    text-align: center
+}
+
+.logo-description {
+    font-size: 18px;
+    line-height: 1;
+    color: #666;
+    padding: 20px 15px 0 15px;
+    text-align: center
+}
+
+.zan-loadmore--nomore .zan-loadmore__tips {
+    background: #eee;
+}
+
+.zan-loadmore {
+    margin-bottom: 0px;
+}

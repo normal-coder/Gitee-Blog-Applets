@@ -1,0 +1,35 @@
+<!--pages/setting/index.wxml-->
+<import src="/style/zan-ui/loadmore/index.wxml" />
+<view class="container">
+    <image class="logo" src="/images/icons/gitee-logo-red.png"></image>
+
+    <view class='logo-title'>码云博客</view>
+    <view class='logo-description'>第三方小程序 Update at 2018.06.20</view>
+    <template is="zan-loadmore" data="{{ nomore: true }}" />
+
+
+    <block wx:for="{{ list }}" wx:for-item="group" wx:key="title">
+        <view class="zan-panel-title">{{ group.title }}</view>
+        <view class="zan-panel">
+            <view wx:for="{{ group.content }}" wx:key="name">
+                <view wx:if="{{item.type == 'app'}}">
+                    <navigator class="zan-cell zan-cell--access" url="{{ item.path }}">
+                        <view class="zan-cell__bd">{{ item.name }}</view>
+                        <view class="zan-cell__ft"></view>
+                    </navigator>
+                </view>
+                <view wx:else>
+                    <navigator class="zan-cell zan-cell--access" url="/pages/mine/webview/index?url={{ item.path }}">
+                        <view class="zan-cell__bd">{{ item.name }}</view>
+                        <view class="zan-cell__ft"></view>
+                    </navigator>
+                </view>
+            </view>
+
+
+
+
+        </view>
+    </block>
+
+</view>
