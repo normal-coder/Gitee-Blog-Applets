@@ -1,0 +1,47 @@
+/* pages/index/detail/index.wxss */
+
+/* pages/index/index/index.wxss */
+
+.zan-box {
+    width: 92%;
+    margin: 1.5em 4% 1.5em 4%;
+    /* background-color: #fff; *//* border:0px solid; *//* border-radius:7px; *//* box-shadow: 0 5px 35px rgba(50, 50, 93, 0.1), 0 0px 5px rgba(0, 0, 0, 0.07); */
+}
+
+.blog-info {
+    width: 100%;
+    margin: 0.5em 0% 0.5em 0%;
+}
+
+.title {
+    /* width: 100%; */
+    padding: 0em 0em 0.5em 0em;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.category {
+    display: inline-block;
+    font-size: 16px;
+    color: #999;
+    /* margin-right: 5px; *//* background-color: #ddd; *//* border: 0px solid; *//* border-radius: 2px; *//* padding: 2px 5px 2px 5px; *//* box-shadow: 0 5px 35px rgba(50, 50, 93, 0.1), 0 0px 5px rgba(0, 0, 0, 0.07); */
+}
+
+.public_time {
+    display: inline-block;
+    font-size: 16px;
+    color: #999;
+    margin-right: 5px;
+}
+
+.zan-loadmore--nomore .zan-loadmore__tips {
+    background: #eee;
+}
+
+.forwardButton {
+    margin-top: 0.4em;
+}
+
+image {
+    width: 100%;
+}

@@ -1,0 +1,38 @@
+<!--pages/index/detail/index.wxml-->
+<!-- <text>pages/index/detail/index.wxml</text> -->
+<import src="/style/zan-ui/tab/index.wxml" />
+<import src="/style/zan-ui/loadmore/index.wxml" />
+
+<view class="container">
+    <view style="margin-top:0px">
+        <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}}" bindscrolltolower="getNextPage" bindscrolltoupper="refreshCurrentPage">
+            <view class="zan-box">
+                <view class="zan-row">
+                    <view class='blog-info'>
+                        <!-- zan-panel-box-head -->
+                        <view class='title'>
+                            {{ title }}
+                        </view>
+                        <view class='category'>
+                            {{ category }}
+                        </view>
+
+                        <view class='public_time'>
+                            {{ date }}
+                        </view>
+                    </view>
+                </view>
+                <view class="zan-row">
+                    <wxparser rich-text="{{ content }}" bind:tapLink="goto" />
+                </view>
+                <view class='zan-row forwardButton' hidden="{{forwardButton ? true : false}}">
+                    <button class="zan-btn zan-btn--primary" open-type="share">分享文章</button>
+                    <button class="zan-btn zan-btn--primary" bindtap='tapToIndex'>查看更多</button>
+                </view>
+                <view style="margin-top:1em;margin-bottom:1em;">
+                    <template is="zan-loadmore" data="{{ nomore: true }}" />
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>
