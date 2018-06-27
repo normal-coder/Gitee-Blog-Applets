@@ -1,0 +1,18 @@
+{
+    "name": "normal/blog_gitee",
+    "description": "码云博客小程序服务端",
+    "type": "project",
+    "authors": [
+        {
+            "name": "诺墨",
+            "email": "normal@normalcoder.com"
+        }
+    ],
+    "require": {
+        "normal/think-monolog": "dev-master",
+        "parsecsv/php-parsecsv": "^0.4.5",
+        "overtrue/wechat": "~4.0",
+        "paquettg/php-html-parser": "^1.7",
+        "psr/http-message": "^1.0"
+    }
+}
