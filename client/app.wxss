@@ -1,0 +1,67 @@
+/* 引入内容渲染模块样式 */
+
+
+/**app.wxss**/
+@import "style/iconfont.wxss";
+@import "style/zan-ui/index.wxss";
+@import "style/diy-zan.wxss";
+/**app.wxss**/
+
+page {
+    height: 100%;
+}
+
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: initiali;
+    /* padding: 0 0; */
+    box-sizing: border-box;
+    background: #EEEEEE;
+    overflow: hidden;
+    min-height: 100vh;
+    /* box-sizing: border-box; */
+    padding: 0px 0px 0px 0px ;
+}
+
+.container::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    content: ' ';
+    width: 100%;
+    height: 1rpx;
+    background-color: #e2e2e2;
+    z-index: 5;
+}
+
+.doc-title {
+    position: relative;
+    padding: 0px 0;
+    margin: 0px 15px;
+    line-height: 25px;
+    font-size: 25px;
+    color: #666;
+}
+
+.doc-description {
+    margin: 14px 0;
+    padding: 0 15px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+}
+
+/* 自定义颜色色系  */
+
+.osc-green {
+    color: #319440;
+}
+
+.osc-bg-green {
+    background-color: #319440;
+    color: #fff;
+}
