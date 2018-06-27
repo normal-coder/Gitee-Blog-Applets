@@ -1,0 +1,19 @@
+.zan-tag {
+    margin: 8px 5px 5px 5px;
+    line-height: 32px;
+    font-size: 14px;
+}
+
+.zan-tag--gray {
+    color: #eee;
+    background: #999;
+}
+
+.zan-tag--gray::after {
+    border-color: #999;
+}
+
+.zan-tag--gray.zan-tag--plain {
+    color: #999;
+    background: #eee;
+}
