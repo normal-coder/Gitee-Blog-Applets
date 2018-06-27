@@ -1,0 +1,59 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.98",
+	"appid": "wx271b9731f93d3c20",
+	"projectname": "%E7%A0%81%E4%BA%91%E5%8D%9A%E5%AE%A2",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "博客详情",
+					"pathName": "pages/index/detail/index",
+					"query": "path=https://blog.gitee.com/2018/06/11/gitee_pages_news/&cover=https://blog.gitee.com/wp-content/uploads/2018/05/E9BB98E8AEA4E6A087E9A298_E5AE98E696B9E585ACE4BC97E58FB7E9A696E59BBE_2018.05.22-700x500.png"
+				},
+				{
+					"id": 1,
+					"name": "博客详情-来自转发 ",
+					"pathName": "pages/index/detail/index",
+					"query": "path=https://blog.gitee.com/2018/06/11/gitee_pages_news/&cover=https://blog.gitee.com/wp-content/uploads/2018/05/E9BB98E8AEA4E6A087E9A298_E5AE98E696B9E585ACE4BC97E58FB7E9A696E59BBE_2018.05.22-700x500.png&forward=1"
+				},
+				{
+					"id": -1,
+					"name": "关于",
+					"pathName": "pages/mine/index/index",
+					"query": ""
+				}
+			]
+		}
+	}
+}
