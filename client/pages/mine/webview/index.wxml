@@ -1,0 +1,2 @@
+<!--pages/mine/webview/index.wxml-->
+<web-view src="{{weblocation}}" bindmessage="callBackMessage"></web-view>
