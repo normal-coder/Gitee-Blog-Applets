@@ -1,0 +1,39 @@
+{
+    "pages": [
+        "pages/index/index/index",
+        "pages/index/detail/index",
+        "pages/index/canvas/index",
+        "pages/mine/index/index",
+        "pages/mine/webview/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#2C3031",
+        "navigationBarTitleText": "码云博客",
+        "navigationBarTextStyle": "write"
+    },
+    "plugins": {
+        "wxparserPlugin": {
+            "version": "0.1.0",
+            "provider": "wx9d4d4ffa781ff3ac"
+        }
+    },
+    "tabBar": {
+        "color": "#2D3134",
+        "selectedColor": "#D80A1E",
+        "list": [
+            {
+                "pagePath": "pages/index/index/index",
+                "text": "博客",
+                "iconPath": "images/icons/gitee-logo-gray.png",
+                "selectedIconPath": "images/icons/gitee-logo-red.png"
+            },
+            {
+                "pagePath": "pages/mine/index/index",
+                "text": "关于",
+                "iconPath": "images/icons/mine-gray.png",
+                "selectedIconPath": "images/icons/mine-red.png"
+            }
+        ]
+    }
+}
