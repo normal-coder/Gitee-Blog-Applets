@@ -21,7 +21,6 @@
 
 <p align="left">
     <img src="./screenshots/index-01.png" alt="" width="300">
-    
     <img src="./screenshots/index-02.png" alt="" width="300">
     <img src="./screenshots/detail.png" alt="" width="300">
     <img src="./screenshots/about.png" alt="" width="300">
