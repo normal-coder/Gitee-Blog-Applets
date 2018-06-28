@@ -1,7 +1,7 @@
 
 
 <p align="center">
-    <img src="./screenshots/applet_code.jpg" alt="layui" width="250">
+    <img src="./screenshots/applet_code.jpg" alt="小程序码" width="250">
 </p>
 <p align="center">
   码云博客 第三方小程序
@@ -17,6 +17,15 @@
 小程序前端使用ES6+小程序原生语法，基于 [ZanUI WeApp] 和 [Wext] 开发的小程序应用。[ZanUI WeApp] 是有赞移动 Web UI 规范 ZanUI 的小程序现实版本。[Wext] 是针对小程序API和部分JS功能实现封装的小程序组件。
 
 
+## 截图预览
+
+<p align="left">
+    <img src="./screenshots/index-01.png" alt="" width="300">
+    
+    <img src="./screenshots/index-02.png" alt="" width="300">
+    <img src="./screenshots/detail.png" alt="" width="300">
+    <img src="./screenshots/about.png" alt="" width="300">
+</p>
 
 ## 下载
 ``` bash
